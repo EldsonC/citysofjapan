@@ -18,7 +18,7 @@ const Tokyo = require('./routes/citys')
 
 app.use('/city', Tokyo)
 
-const PORT = 8080
+const PORT = 3000
 app.listen(PORT, () => {
     console.log('<<===>> | SERVER ACTIVE | <<===>>')
 })
