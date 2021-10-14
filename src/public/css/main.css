@@ -1,0 +1,402 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(180deg, rgba(103, 137, 151, 0) 0%, rgba(29, 34, 37, 0.63) 61.46%, rgba(10, 7, 7, 0.7) 100%);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+header {
+    width: 90%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.containner-header {
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containner-explore-btn-header {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containner-search-explore {
+    width: 10%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-explore-header {
+    margin-left: 30px;
+    width: 140px;
+    height: 30px;
+
+    border-radius: 50px;
+    border: 1px solid white;
+
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.btn-explore-header:hover {
+    background: #FC002E;
+    border: 1px solid #FC002E;
+    transition: 0.5s;
+}
+
+.containner-redes-socias {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-redes-socias {
+    margin-left: 15px;
+}
+
+#twitter, #facebook, #instagram {
+    width: 15px;
+}
+
+/* .containner-search {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containner-area-search {
+    padding-right: 15px;
+    width: 200px;
+    height: 30px;
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#searchValue {
+    padding-left: 20px;
+    width: 200px;
+    height: 30px;
+    
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 13px;
+    
+
+    
+    border: none;
+    color: white;
+
+    background: transparent;
+
+    outline: none;
+}
+#btn-search {
+    margin-top: 3px;
+    width: 20px;
+
+    cursor: pointer;
+}
+.btn-search {
+    width: auto;
+    height: 100%;
+}
+input[type=search]::placeholder {
+    color: white;
+}
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; } */
+
+.containner-body {
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containner-show {
+    display: flex;
+}
+.circle {
+    padding-top: 10px;
+    width: 210px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background: rgba(121, 1, 37, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    animation: circleAnimation 2s;
+}
+
+#name-japan {
+    font-family: "Righteous", cursive;
+    color: white;
+    font-size: 30px;
+
+    animation: nameJpCityAnimation 1s;
+}
+
+#name-city {
+    font-family: "Righteous", cursive;
+    color: white;
+    font-size: 100px;
+    letter-spacing: 25px;
+
+    animation: nameJpCityAnimation 2s;
+}
+
+.btn-explore-circle {
+    width: 120px;
+    height: 30px;
+
+    position: relative;
+    bottom:-5px;
+
+    border-radius: 50px;
+    border: 1px solid #FC002E;
+    background: #FC002E;
+
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    animation: btnAnimation 3s;
+}
+@media screen and (max-width: 600px) {
+    #name-city {
+        font-size: 70px;
+    }
+    
+}
+.containner-data {
+    width: 90%;
+    height: 100%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+
+}
+
+.history-of-city {
+    width: 50%; 
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.line {
+    margin-bottom: 15px;
+    width: 50px;
+    height: 5px;
+
+    border-radius: 50px;
+    background: #FC002E;
+}
+.title {
+    margin-bottom: 20px;
+    font-family: "Righteous", cursive;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 25px;
+}
+
+.history {
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
+.containner-btn-navigation {
+    height: 30px;
+    width: auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-map {
+    margin-right: 15px;
+    width: 100px;
+    height: 100%;
+
+    border: 1px solid #FC002E;
+    border-radius: 50px;
+
+    background: #FC002E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+.btn-back {
+    margin-right: 15px;
+    width: 100px;
+    height: 100%;
+
+    border: 1px solid white;
+    border-radius: 50px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+@keyframes circleAnimation {
+    from {
+        background: transparent;
+    }
+
+    to {
+        background: rgba(121, 1, 37, 0.6);
+    }
+}     
+
+@keyframes nameJpCityAnimation {
+    10% {
+        color: transparent;
+        position: relative;
+        top: 100px;
+    }
+    100% {
+        color: white;
+        position: relative;
+        top: 0px;
+    }
+        
+}
+@keyframes nameJpCityAnimation2 {
+    0% {
+        color: transparent;
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    100% {
+        color: white;
+        opacity: 1;
+        position: relative;
+        top: 0px;
+    }
+        
+}
+
+@keyframes btnAnimation {
+    0% {
+        width: 0px;
+        
+    }
+    50% {
+        width: 120px;
+        
+    }
+}
+
+@keyframes animationExit {
+    0% {
+        position: relative;
+        top: 0px;
+    }
+    100% {
+        position: relative;
+        top: -600px;
+        opacity: 0;
+        background: transparent;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 5px;
+}
