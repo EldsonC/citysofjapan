@@ -18,7 +18,5 @@ const Tokyo = require('./routes/citys')
 
 app.use('/city', Tokyo)
 
-const PORT = 3000
-app.listen(PORT, () => {
-    console.log('<<===>> | SERVER ACTIVE | <<===>>')
-})
+
+app.listen(process.env.PORT || 3000)
